@@ -1,0 +1,27 @@
+span.item_qty_in {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    color: #fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;            
+    padding: 2px 2px;
+}
+.item_quantiy {
+    position: relative;
+    padding: 5px;
+    border-radius: 5px;
+    border:1px solid #efefef
+}
+
+.item_quantiy img{
+    border-radius: 5px;
+    background: #efefef;
+    display: flex;
+}

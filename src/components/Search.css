@@ -1,0 +1,102 @@
+.predictive_search {
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 20px;
+    position: absolute;
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.4s ease, opacity 0.3s ease, visibility 0s linear 0.4s;
+}
+
+.predictive_search.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    transition: transform 0.4s ease, opacity 0.3s ease, visibility 0s;
+    /* min-height: 400px; */
+    overflow-y: auto;
+}
+.predictive_search {
+    width: 100%;
+    background: #efefef;
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: 111;
+}
+
+
+
+.search_box {
+    display: flex;
+    border: 1px solid;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+}
+.search_box_main{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search_box input {
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+    margin: 0;
+    overflow: hidden !important;
+    box-sizing: revert-rule;
+    border: 1px;
+}
+
+.search_box button {
+    border: 1px;
+    width: 40px;
+    height: 40px;
+    font-size: 26px;
+    background: #000000db;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon_close{
+    cursor: pointer;
+}
+.search_results {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.search_results h4.title  , p.product-price{
+    font-size: 12px;
+}
+.search_results .rating svg {
+    width: 11px;
+    height: 11px;
+}
+.search_results span.badge{
+    font-size: 10px;
+}
+
+.moreItems {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 14px;
+    border-bottom: 1px solid;
+    width: fit-content;
+    font-weight: 600;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.search_results h3 {
+    text-align: left;
+    padding-bottom: 10px;
+    font-size: 14px;
+}

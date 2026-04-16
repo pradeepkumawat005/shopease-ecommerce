@@ -1,0 +1,71 @@
+/* Base skeleton */
+.skeleton-box {
+  position: relative;
+  background: #e5e7eb;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+/* 🔥 Rays Animation */
+.skeleton-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  height: 100%;
+  width: 150%;
+  background: linear-gradient(
+    120deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.6),
+    transparent 80%
+  );
+  animation: shimmer 1.4s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    left: 150%;
+  }
+}
+
+/* Layout matching */
+.skeleton-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Image */
+.skeleton-card .first-image {
+  width: 100%;
+  height: 260px;
+}
+
+/* Badge */
+.skeleton-card .badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: 20px;
+}
+
+/* Button */
+.skeleton-card .add-to-cart {
+  width: 100%;
+  height: 35px;
+  margin-top: 10px;
+}
+
+/* Title */
+.skeleton-card .title {
+  height: 30px;
+  width: 80%;
+}
+
+/* Price */
+.skeleton-card .product-price {
+  height: 30px;
+  width: 40%;
+}
